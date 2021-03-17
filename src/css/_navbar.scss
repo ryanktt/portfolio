@@ -1,0 +1,123 @@
+.nav-wrapper {
+    background-color: $headerColor;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    transition: ease-in-out 0.2s;
+}
+
+nav {
+    @include flex(row, space-between);
+    height: 50px;
+    width: $maxWidthPhone;
+    margin: 0 auto;
+
+    .logo {
+        width: 25px;
+        height: auto;
+    }
+
+    .toolbar {
+        
+        display: none;
+        list-style: none;
+        li {
+            font-size: 1.3rem;
+            color: $white;
+            margin-right: 20px;
+            font-family: $titleFont;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        li:hover {
+            color: $primaryColor;
+        }
+        li:last-child {
+            margin: 0;
+        }
+    }
+
+    .hamburguer {
+        z-index: 6;
+        @include flex(column, space-between);
+        height: 19px;
+        cursor: pointer;
+        div {
+            width: 25px;
+            height: 3px;
+            border-radius: 3px;
+            background-color: $white;
+        }
+        
+    }
+    
+
+    .sidedrawer {
+        position: absolute;
+        background-color: $headerColor;
+        width: 100%;
+        top: 0px;
+        transform: translateY(-400px);
+        transition: ease-in-out 0.5s;
+        left: 0;
+        padding: 30px;
+        
+        ul{
+            width: fit-content;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 0 auto;
+            li {
+                font-size: 1.2rem;
+                color: $white;
+                margin-bottom: 23px;
+                font-family: $titleFont;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            li:last-child {
+                margin-bottom: 0;
+            }
+
+            li:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+    .sidedrawer.active {
+        transform: translateY(0);
+        
+    }
+
+}
+
+
+
+@media only screen  and (min-width: 600px) {
+    nav {
+        height: 60px;
+        .logo {
+            width: 40px;
+        }
+        .hamburguer {
+            display: none;
+        }
+        .toolbar {
+            display: flex;
+        }
+        .sidedrawer {
+            display: none;
+        }
+    }
+}
+
+@media only screen  and (min-width: 1000px) {
+    nav {
+        .logo{
+            width: 45px;
+        }
+        height: 70px;
+        width: $maxWidthDesktop;
+    }
+}

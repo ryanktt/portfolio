@@ -1,0 +1,69 @@
+.button {
+    background-color: $tertiaryColor;
+    border-radius: 3px;
+    padding: 10px;
+    border-style: none;
+    cursor: pointer;
+
+    a {
+        color: $headerColor;
+        font-family: $titleFont;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+.button:hover {
+    background-color: $tertiaryMediumColor;
+}
+
+.button.dark {
+    padding: 5px;
+    background-color: $primaryDarkColor;
+    a {
+        color: $white;
+        font-size: 14px;
+    }
+}
+.button.dark:hover {
+    background-color: $primaryIntenseColor;
+}
+
+.button.small {
+    padding: 5px;
+
+    a {
+        font-size: 14px;
+    }
+}
+
+
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    
+}
+
+.tag {
+    padding: 2px 4px;
+    border-radius: 3px;
+    background-color: rgb(92, 92, 92);
+    width: fit-content;
+    .text {
+        font-size: 14px !important;
+        font-weight: 500;
+        color: $white !important;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .tag {
+        .text {
+            font-size: 16px !important;
+            
+        }
+    }
+}
