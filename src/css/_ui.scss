@@ -4,13 +4,10 @@
     padding: 10px;
     border-style: none;
     cursor: pointer;
-
-    a {
-        color: $headerColor;
-        font-family: $titleFont;
-        font-weight: bold;
-        font-size: 16px;
-    }
+    color: $headerColor;
+    font-family: $titleFont;
+    font-weight: bold;
+    font-size: 16px;
 }
 .button:hover {
     background-color: $tertiaryMediumColor;
@@ -19,10 +16,9 @@
 .button.dark {
     padding: 5px;
     background-color: $primaryDarkColor;
-    a {
-        color: $white;
-        font-size: 14px;
-    }
+    color: $white;
+    font-size: 14px;
+    
 }
 .button.dark:hover {
     background-color: $primaryIntenseColor;
@@ -30,10 +26,7 @@
 
 .button.small {
     padding: 5px;
-
-    a {
-        font-size: 14px;
-    }
+    font-size: 14px;
 }
 
 
@@ -46,6 +39,8 @@
     
 }
 
+// -----------------
+
 .tag {
     padding: 2px 4px;
     border-radius: 3px;
@@ -55,6 +50,44 @@
         font-size: 14px !important;
         font-weight: 500;
         color: $white !important;
+    }
+}
+
+// ------------------------
+
+.alert {
+    margin: 0 auto;
+    opacity: 0;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px 40px;
+    background-color: rgb(212, 212, 212);
+    
+    h4 {
+        font-size: 20px;
+        color: $lightBlack
+    }
+}
+
+.alert.animate {
+    animation: toTop 0.5s 1;
+    animation-fill-mode: forwards;
+}
+.alert.unanimate {
+    animation: reverseToTop 0.5s 1;
+    animation-fill-mode: forwards;
+}
+
+.alert.success {
+    background-color: rgb(13, 128, 13);
+    h4 {
+        color: $white;
+    }
+}
+.alert.failure {
+    background-color: rgb(151, 21, 21);
+    h4 {
+        color: $white;
     }
 }
 

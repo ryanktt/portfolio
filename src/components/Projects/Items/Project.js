@@ -30,8 +30,8 @@ const Project = (props) => {
 
                 </div>
                 <div className='buttons'>
-                        <div><Button small dark><i className="fas fa-eye"></i> Site</Button></div>
-                        <div><Button small dark><i className="fas fa-code"></i> Código</Button></div>
+                        <div><Button small path={site} dark><i className="fas fa-eye"></i> Site</Button></div>
+                        <div><Button small path={code} dark><i className="fas fa-code"></i> Código</Button></div>
                     </div>
             </div>
 

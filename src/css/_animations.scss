@@ -46,3 +46,19 @@
         transform: translateX(0);
     }
 }
+
+@keyframes reverseToTop {
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+        
+    }
+
+    30%{
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(100px);
+    }
+}

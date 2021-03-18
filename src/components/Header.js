@@ -6,7 +6,7 @@ const Header = () => {
         <header>
             <div className="presentation">
                 <h1>Olá, me chamo <span>Ryan Kayro</span></h1>
-                <h2>Um Desenvolver Full Stack</h2>
+                <h2>Um Desenvolver de Software</h2>
             </div>
             <div className='contact-me'>
                 <div>
@@ -18,7 +18,7 @@ const Header = () => {
                     
                 </div>
             </div>
-            <div className='header-btn'><Button path='#projects'>Veja Meu Trabalho</Button></div>
+            <div className='header-btn'><Button path={`${window.location.origin}/#projects`}>Veja Meu Trabalho</Button></div>
         </header>
     )
 }

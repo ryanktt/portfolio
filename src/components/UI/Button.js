@@ -9,8 +9,14 @@ const Button = (props) => {
     if(dark) classes = `${classes} dark`;
     if(!type) type='button';
 
+    let target = "_blank";
+    if (path) if (path.includes(window.location.origin)) target = ''
+
+    if(type === 'submit') return (
+        <button className={classes} type={type} >{children}</button>
+    )
     return (
-        <button className={classes} type={type} ><a href={path} >{children}</a></button>
+        <a target={target} href={path} ><button className={classes} type={type} >{children}</button></a>
     )
 }
 
