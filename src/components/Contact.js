@@ -69,19 +69,19 @@ const Contact = (props) => {
                 <form onSubmit={(e) => onSubmit(e)}>
                     <div className='form-group'>
                         <label htmlFor='firstName'>Primeiro Nome</label>
-                        <input value={contact.firstName} id='firstName' name='firstName' onChange={(e) => onChange(e)}/>
+                        <input required={true} value={contact.firstName} id='firstName' name='firstName' onChange={(e) => onChange(e)}/>
                     </div>
                     <div className='form-group'>
                         <label htmlFor='lastName'>Sobrenome</label>
-                        <input value={contact.lastName} id='lastName' name='lastName' onChange={(e) => onChange(e)}/>
+                        <input required={true} value={contact.lastName} id='lastName' name='lastName' onChange={(e) => onChange(e)}/>
                     </div>
                     <div className='form-group'>
                         <label htmlFor='email'>Email</label>
-                        <input value={contact.email} id='email' name='email' onChange={(e) => onChange(e)}/>
+                        <input required={true} value={contact.email} id='email' name='email' type='email' onChange={(e) => onChange(e)}/>
                     </div>
                     <div className='form-group'>
                         <label htmlFor='message'>Mensagem</label>
-                        <textarea value={contact.message} cols='30' rows='10' id='message' name='message' onChange={(e) => onChange(e)}/>
+                        <textarea required={true} value={contact.message} cols='30' rows='10' id='message' name='message' onChange={(e) => onChange(e)}/>
                     </div>
                     <div className='btn'><Button type='submit'>Contatar</Button></div>
                 </form>
