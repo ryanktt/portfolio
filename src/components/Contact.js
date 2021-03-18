@@ -37,7 +37,9 @@ const Contact = (props) => {
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        const res = await axios.post('https://formspree.io/f/xvoveebe', contact, {headers: {
+
+        try {
+            const res = await axios.post('https://formspree.io/f/xvoveebe', contact, {headers: {
             'Content-Type': 'application/json'
         }});
         setAnimate(true)
@@ -48,6 +50,11 @@ const Contact = (props) => {
                 setAlertMsg('Ocorreu um Erro')
                 setAlertType('failure');
             
+        }    
+        } catch (err) {
+            setAnimate(true);
+            setAlertMsg('Ocorreu um Erro')
+            setAlertType('failure');
         }
         setTimeout(() => {
             setAnimate(false)
