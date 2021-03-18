@@ -52,7 +52,7 @@ const Projects = () => {
                         <Project
                         text='Portfólio planejado com o foco no design para demonstrar minhas habilidades e projetos.'
                         title='Portfólio'
-                        site={window.location.origin}
+                        site='https://ryanktt.github.io/portfolio/'
                         code='https://github.com/ryanktt/portfolio'
                         tags={['HTML', 'CSS', 'JavaScript', 'React', 'NPM', 'Sass']}
                         imgPath={portfolio}/>

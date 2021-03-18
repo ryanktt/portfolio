@@ -13,7 +13,7 @@ const Footer = () => {
                     
                 </div>
             </div>
-            <p>© 2021 {window.location.origin}</p>
+            <p>© 2021 https://ryanktt.github.io/portfolio</p>
         </section>
     )
 }

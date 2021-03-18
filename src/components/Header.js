@@ -18,7 +18,7 @@ const Header = () => {
                     
                 </div>
             </div>
-            <div className='header-btn'><Button path={`${window.location.origin}/#projects`}>Veja Meu Trabalho</Button></div>
+            <div className='header-btn'><Button path={`https://ryanktt.github.io/portfolio/#projects`}>Veja Meu Trabalho</Button></div>
         </header>
     )
 }
