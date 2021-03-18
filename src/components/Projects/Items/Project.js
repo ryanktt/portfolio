@@ -26,7 +26,7 @@ const Project = (props) => {
                     <div className='tags'>
                         {tagList}
                     </div>
-                    <p>{text}</p>
+                    <p className='content-text'>{text}</p>
 
                 </div>
                 <div className='buttons'>

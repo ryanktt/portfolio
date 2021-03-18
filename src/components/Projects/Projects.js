@@ -28,26 +28,27 @@ const Projects = () => {
             <div className='projects'>
                 <h2>Projetos</h2>
                 <div className='project-list'>
-                    <div className='project-box 0'>
+                    <div className='project-box '>
                         <Project
-                        text='Fórum desenvolvido com o intuito de aprimorar meu conhecimento em backend, possui autenticação, sistema de moderação simples, e coisas básicas de um fórum, como: postar, like/dislike, notificação simples etc.'
+                        text='Um fórum SPA simples, porém com todas as funcionalidades de um fórum normal. Desenvolvido com intuito de fixar e aprimorar meus conhecimentos em React e back-end. 
+                        Possui autenticação, validação, sistema de moderação, tudo que alguém esperaria de um fórum e o fato interessante de que não é preciso recarregar a página, o que garante mais velocidade e menos uso de dados.'
                         title='FórumPlayers'
                         tags={['HTML', 'CSS', 'JavaScript', 'MongoDB', 'NodeJs', 'NPM', 'ExpressJs', 'React', 'Redux']}
                         imgPath={forum}/>
                     </div> 
 
-                    <div className='project-box 1'>
+                    <div className='project-box '>
                         <Project
-                        text='Fórum desenvolvido com o intuito de aprimorar meu conhecimento em backend, possui autenticação, sistema de moderação simples, e coisas básicas de um fórum, como: postar, like/dislike, notificação simples etc.'
+                        text='Blog completo pensado para solidificar conhecimentos previamente adquiridos em nodeJs e banco de dados MySQL. Possui sistemar de publicar, editar e apagar posts, também como login para administradores, e sistema de hierarquia, onde administradores não podem alterar posts que não tenham publicado, sendo isso possível para o dono.'
                         title='TickTech Blog'
                         tags={['HTML', 'CSS', 'JavaScript', 'MySQL', 'NodeJs', 'NPM', 'ExpressJs']}
                         imgPath={blog}/>
                     </div> 
-                    <div className='project-box 2'>
+                    <div className='project-box '>
                         <Project
-                        text='Fórum desenvolvido com o intuito de aprimorar meu conhecimento em backend, possui autenticação, sistema de moderação simples, e coisas básicas de um fórum, como: postar, like/dislike, notificação simples etc.'
-                        title='TickTech Blog'
-                        tags={['HTML', 'CSS', 'JavaScript', 'MySQL', 'NodeJs', 'NPM', 'ExpressJs']}
+                        text='Portfólio planejado com o foco no design para demonstrar minhas habilidades e projetos.'
+                        title='Portfólio'
+                        tags={['HTML', 'CSS', 'JavaScript', 'React', 'NPM', 'Sass']}
                         imgPath={portfolio}/>
                     </div> 
                 </div>

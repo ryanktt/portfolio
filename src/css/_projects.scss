@@ -1,6 +1,10 @@
 .projects-wrapper {
     background-color: $primaryDarkColor;
     width: 100%;
+
+    .project-box {
+        margin-bottom: 50px;
+    }
 }
 
 .projects {
@@ -17,16 +21,14 @@
 
     .project-list {
         @include flex(row, center);
+        align-items: flex-start;
         flex-wrap: wrap;
 
-        div {
-            margin-bottom: 30px;
-        }
     }
 }
 
 .project {
-    max-width: 400px;
+    max-width: 380px;
     background-color: $white;
     overflow: hidden;
     -webkit-box-shadow: -12px 18px 0px 0px rgba(0,0,0,0.5);
@@ -50,6 +52,10 @@
             font-size: 16px;
             color: $lightBlack;
         }
+        .content-text {
+      
+        }
+
         .tags {
             margin-bottom: 10px;
             div {
@@ -118,26 +124,14 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1500px) {
     .projects {
-        width: $maxWidthDesktop;
+        width: 65%;
         h2 {
             margin-bottom: 60px;
         }
     }
 
-    .project {
-        max-width: 400px;
-        p {
-            font-size: 20px !important;
-        }
-    }
-
-    .project-list {
-        .project-box {
-           padding: 0 15px;
-        }
-    }
 }
 
 
