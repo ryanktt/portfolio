@@ -3,6 +3,7 @@ import Project from './Items/Project';
 import forum from '../../assets/projects/forum.jpg';
 import blog from '../../assets/projects/blog.jpg';
 import portfolio from '../../assets/projects/portfolio.jpg';
+import chat from '../../assets/projects/chat.jpg';
 
 const Projects = () => {
     useEffect(() => {
@@ -45,18 +46,28 @@ const Projects = () => {
                         title='TickTech Blog'
                         site='https://ticktech.herokuapp.com/'
                         code='https://github.com/ryanktt/blog-app'
-                        tags={['HTML', 'CSS', 'JavaScript', 'MySQL', 'NodeJs', 'NPM', 'ExpressJs']}
+                        tags={['HTML', 'CSS', 'JavaScript', 'EJS', 'MySQL', 'NodeJs', 'NPM', 'ExpressJs']}
                         imgPath={blog}/>
                     </div> 
                     <div className='project-box '>
                         <Project
-                        text='Portfólio planejado com o foco no design para demonstrar minhas habilidades e projetos.'
+                        text={`Chat simples em tempo real usando Socket.io.\n\nPara testar basta fazer o login em abas diferentes.`}
+                        title='Chatalk'
+                        site='https://lchatalkl.herokuapp.com/'
+                        code='https://github.com/ryanktt/chat-app/'
+                        tags={['HTML', 'CSS', 'JavaScript', 'EJS', 'NPM', 'NodeJs']}
+                        imgPath={chat}/>
+                    </div> 
+                    <div className='project-box '>
+                        <Project
+                        text='Portfólio planejado com o foco em design para demonstrar minhas habilidades e projetos.'
                         title='Portfólio'
                         site='https://ryanktt.github.io/portfolio/'
                         code='https://github.com/ryanktt/portfolio'
                         tags={['HTML', 'CSS', 'JavaScript', 'React', 'NPM', 'Sass']}
                         imgPath={portfolio}/>
                     </div> 
+                    
                 </div>
                
             </div>
