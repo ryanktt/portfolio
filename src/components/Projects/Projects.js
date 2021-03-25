@@ -55,7 +55,7 @@ const Projects = () => {
                         title='Chatalk'
                         site='https://lchatalkl.herokuapp.com/'
                         code='https://github.com/ryanktt/chat-app/'
-                        tags={['HTML', 'CSS', 'JavaScript', 'EJS', 'NPM', 'NodeJs']}
+                        tags={['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'EJS', 'NPM', 'NodeJs']}
                         imgPath={chat}/>
                     </div> 
                     <div className='project-box '>
