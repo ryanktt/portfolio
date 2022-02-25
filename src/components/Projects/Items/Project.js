@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Tag from '../../UI/Tag';
 import Button from '../../UI/Button';
-
-import forum from '../../../assets/projects/forum.jpg'
+import Translator from '../../I18n/Translator';
 
 const Project = (props) => {
     const [tagList, setTagList] = useState([])
@@ -19,21 +18,21 @@ const Project = (props) => {
 
     return (
         
-            <div className='project'>
-                <img src={imgPath} alt=''/>
-                <div className='content'>
-                    <p className='title'>{title}</p>
-                    <div className='tags'>
-                        {tagList}
-                    </div>
-                    <p className='content-text'>{text}</p>
-
+        <div className='project'>
+            <img src={imgPath} alt=''/>
+            <div className='content'>
+                <p className='title'>{title}</p>
+                <div className='tags'>
+                    {tagList}
                 </div>
-                <div className='buttons'>
-                        <div><Button small path={site} dark><i className="fas fa-eye"></i> Site</Button></div>
-                        <div><Button small path={code} dark><i className="fas fa-code"></i> Código</Button></div>
-                    </div>
+                <p className='content-text'>{text}</p>
+
             </div>
+            <div className='buttons'>
+                    <div><Button small path={site} dark><i className="fas fa-eye"></i><Translator path='projects.website'/></Button></div>
+                    <div><Button small path={code} dark><i className="fas fa-code"></i><Translator path='projects.code'/></Button></div>
+                </div>
+        </div>
 
     )
 }

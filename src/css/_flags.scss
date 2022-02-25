@@ -1,0 +1,19 @@
+.flags-container {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    .flag {
+        padding-right: 5px;
+        width: 25px;
+        opacity: 40%;
+        img {
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+    }
+    
+    .flag.selected {
+        opacity: 100%;
+    }
+}

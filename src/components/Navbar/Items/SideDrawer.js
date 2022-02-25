@@ -1,5 +1,5 @@
 import React from 'react';
-import Backdrop from '../../UI/Backdrop';
+import Translator from '../../I18n/Translator';
 
 const SideDrawer = (props) => {
     const {active} = props;
@@ -10,10 +10,10 @@ const SideDrawer = (props) => {
     return (
         <div className={`sidedrawer ${sdStyle}`}>
             <ul>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#skills'>Habilidades</a></li>
-                <li><a href='#projects'>Projetos</a></li>
-                <li><a href='#contact'>Contatar</a></li>
+                <li><a href='#'><Translator path='header.title'/></a></li>
+                <li><a href='#skills'><Translator path='skills.title'/></a></li>
+                <li><a href='#projects'><Translator path='projects.title'/></a></li>
+                <li><a href='#contact'><Translator path='contact.title'/></a></li>
             </ul>
 
         </div>

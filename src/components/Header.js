@@ -1,12 +1,13 @@
-import React from 'react';
+import Translator from './I18n/Translator';
 import Button from './UI/Button';
+import React from 'react';
 
 const Header = () => {
     return (
         <header>
             <div className="presentation">
-                <h1>Olá, me chamo <span>Ryan Kayro</span></h1>
-                <h2>Um Desenvolver de Software</h2>
+                <h1><Translator path='header.hiImCalled'/> <span>Ryan Kayro</span></h1>
+                <h2><Translator path='header.aSoftwareDeveloper'/></h2>
             </div>
             <div className='contact-me'>
                 <div>
@@ -18,7 +19,7 @@ const Header = () => {
                     
                 </div>
             </div>
-            <div className='header-btn'><Button path={`https://ryanktt.github.io/portfolio/#projects`}>Veja Meu Trabalho</Button></div>
+            <div className='header-btn'><Button path={`https://ryanktt.github.io/portfolio/#projects`}><Translator path='header.seeMyWork'/></Button></div>
         </header>
     )
 }

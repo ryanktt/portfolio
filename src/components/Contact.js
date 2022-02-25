@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '../components/UI/Button';
 import AlertMsg from '../components/UI/alertMsg';
+import Translator from './I18n/Translator';
 import axios from 'axios';
 
 const Contact = (props) => {
@@ -43,7 +44,7 @@ const Contact = (props) => {
             'Content-Type': 'application/json'
         }});
         setAnimate(true)
-        if (res.status = 200) {
+        if (res.status === 200) {
                 setAlertMsg('Sucesso');
                 setAlertType('success');
         } else {
@@ -70,27 +71,27 @@ const Contact = (props) => {
 
     return (
         <section id='contact' className='contact-wrapper'>
-            <h2>Contate-me</h2>
+            <h2><Translator path='contact.title'/></h2>
             <div className='contact'>
                 <AlertMsg  type={alertType} animate={animate}>{alertMsg}</AlertMsg>
                 <form onSubmit={(e) => onSubmit(e)}>
                     <div className='form-group'>
-                        <label htmlFor='firstName'>Primeiro Nome</label>
+                        <label htmlFor='firstName'><Translator path='contact.firstName'/></label>
                         <input required={true} value={contact.firstName} id='firstName' name='firstName' onChange={(e) => onChange(e)}/>
                     </div>
                     <div className='form-group'>
-                        <label htmlFor='lastName'>Sobrenome</label>
+                        <label htmlFor='lastName'><Translator path='contact.lastName'/></label>
                         <input required={true} value={contact.lastName} id='lastName' name='lastName' onChange={(e) => onChange(e)}/>
                     </div>
                     <div className='form-group'>
-                        <label htmlFor='email'>Email</label>
+                        <label htmlFor='email'><Translator path='contact.email'/></label>
                         <input required={true} value={contact.email} id='email' name='email' type='email' onChange={(e) => onChange(e)}/>
                     </div>
                     <div className='form-group'>
-                        <label htmlFor='message'>Mensagem</label>
+                        <label htmlFor='message'><Translator path='contact.message'/></label>
                         <textarea required={true} value={contact.message} cols='30' rows='10' id='message' name='message' onChange={(e) => onChange(e)}/>
                     </div>
-                    <div className='btn'><Button type='submit'>Contatar</Button></div>
+                    <div className='btn'><Button type='submit'><Translator path='contact.submitContact'/></Button></div>
                 </form>
             </div>
         </section>

@@ -14,10 +14,12 @@ import sass from '../assets/icons/sass.svg';
 import mongodb from '../assets/icons/mongodb.svg';
 import mysql from '../assets/icons/mysql.svg';
 import restapi from '../assets/icons/restapi.png';
-
+import graphql from '../assets/icons/graphql.svg';
+import typescript from '../assets/icons/typescript.svg';
+import yarn from '../assets/icons/yarn.svg';
+import Translator from './I18n/Translator';
 
 const Skills = () => {
-    
 
     useEffect(() => {
         //icon animation
@@ -35,11 +37,9 @@ const Skills = () => {
     return (
         <section id='skills' className='skills'>
             <div className='skills-title'>
-                <h2>Habilidades</h2>
-                <p>Técnologias que Trabalhei com.</p>
+                <h2><Translator path='skills.title'/></h2>
+                <p><Translator path='skills.tecsUsed'/></p>
             </div>
-
-
             <div className='icons'>
                 <div className='icon'>
                     <img alt='' src={html}/>
@@ -54,6 +54,10 @@ const Skills = () => {
                     <p>JavaScript</p>
                 </div>
                 <div className='icon'>
+                    <img alt='' src={typescript}/>
+                    <p>Typescript</p>
+                </div>
+                <div className='icon'>
                     <img alt='' src={nodejs}/>
                     <p>NodeJs</p>
                 </div>
@@ -62,12 +66,20 @@ const Skills = () => {
                     <p>ExpressJs</p>
                 </div>
                 <div className='icon'>
+                    <img alt='' src={graphql}/>
+                    <p>GraphQL</p>
+                </div>
+                <div className='icon'>
                     <img alt='' src={restapi}/>
                     <p>Api REST</p>
                 </div>
                 <div className='icon'>
                     <img alt='' src={npm}/>
                     <p>NPM</p>
+                </div>
+                <div className='icon'>
+                    <img alt='' src={yarn}/>
+                    <p>Yarn</p>
                 </div>
                 <div className='icon'>
                     <img alt='' src={sass}/>
