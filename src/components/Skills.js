@@ -19,6 +19,7 @@ import typescript from '../assets/icons/typescript.svg';
 import yarn from '../assets/icons/yarn.svg';
 import Translator from './I18n/Translator';
 import nestjs from '../assets/icons/nestjs.svg';
+import aws from '../assets/icons/aws.png';
 
 const Skills = () => {
 	useEffect(() => {
@@ -67,6 +68,10 @@ const Skills = () => {
 				<div className="icon">
 					<img alt="" src={expressjs} />
 					<p>ExpressJs</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={aws} />
+					<p>Amazon Web Services</p>
 				</div>
 				<div className="icon">
 					<img alt="" src={graphql} />
