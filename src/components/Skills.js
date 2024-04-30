@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 
 import html from '../assets/icons/html.svg';
 import javascript from '../assets/icons/javascript.svg';
@@ -18,101 +18,107 @@ import graphql from '../assets/icons/graphql.svg';
 import typescript from '../assets/icons/typescript.svg';
 import yarn from '../assets/icons/yarn.svg';
 import Translator from './I18n/Translator';
+import nestjs from '../assets/icons/nestjs.svg';
 
 const Skills = () => {
+	useEffect(() => {
+		//icon animation
+		const icons = document.querySelector('.icons');
 
-    useEffect(() => {
-        //icon animation
-        const icons = document.querySelector('.icons');
-  
-        const observer = new IntersectionObserver((entries) => {
-            if(entries[0].intersectionRatio > 0) {
-                icons.classList.add('animate');
-            }
-        })
-        observer.observe(icons); 
-    }, []);
+		const observer = new IntersectionObserver((entries) => {
+			if (entries[0].intersectionRatio > 0) {
+				icons.classList.add('animate');
+			}
+		});
+		observer.observe(icons);
+	}, []);
 
-
-    return (
-        <section id='skills' className='skills'>
-            <div className='skills-title'>
-                <h2><Translator path='skills.title'/></h2>
-                <p><Translator path='skills.tecsUsed'/></p>
-            </div>
-            <div className='icons'>
-                <div className='icon'>
-                    <img alt='' src={html}/>
-                    <p>HTML</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={css}/>
-                    <p>CSS</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={javascript}/>
-                    <p>JavaScript</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={typescript}/>
-                    <p>Typescript</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={nodejs}/>
-                    <p>NodeJs</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={expressjs}/>
-                    <p>ExpressJs</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={graphql}/>
-                    <p>GraphQL</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={restapi}/>
-                    <p>Api REST</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={npm}/>
-                    <p>NPM</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={yarn}/>
-                    <p>Yarn</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={sass}/>
-                    <p>Sass</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={react}/>
-                    <p>ReactJs</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={redux}/>
-                    <p>Redux</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={mysql}/>
-                    <p>MySQL</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={mongodb}/>
-                    <p>MongoDB</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={git}/>
-                    <p>Git</p>
-                </div>
-                <div className='icon'>
-                    <img alt='' src={github}/>
-                    <p>GitHub</p>
-                </div>
-            </div>
-
-        </section>
-    )
-}
+	return (
+		<section id="skills" className="skills">
+			<div className="skills-title">
+				<h2>
+					<Translator path="skills.title" />
+				</h2>
+				<p>
+					<Translator path="skills.tecsUsed" />
+				</p>
+			</div>
+			<div className="icons">
+				<div className="icon">
+					<img alt="" src={html} />
+					<p>HTML</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={css} />
+					<p>CSS</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={javascript} />
+					<p>JavaScript</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={typescript} />
+					<p>Typescript</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={nodejs} />
+					<p>NodeJs</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={expressjs} />
+					<p>ExpressJs</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={graphql} />
+					<p>GraphQL</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={restapi} />
+					<p>Api REST</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={npm} />
+					<p>NPM</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={yarn} />
+					<p>Yarn</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={sass} />
+					<p>Sass</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={react} />
+					<p>ReactJs</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={redux} />
+					<p>Redux</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={mysql} />
+					<p>MySQL</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={mongodb} />
+					<p>MongoDB</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={git} />
+					<p>Git</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={github} />
+					<p>GitHub</p>
+				</div>
+				<div className="icon">
+					<img alt="" src={nestjs} />
+					<p>NestJs</p>
+				</div>
+			</div>
+		</section>
+	);
+};
 
 export default Skills;
