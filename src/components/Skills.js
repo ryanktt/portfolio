@@ -71,7 +71,7 @@ const Skills = () => {
 				</div>
 				<div className="icon">
 					<img alt="" src={aws} />
-					<p>Amazon Web Services</p>
+					<p>AWS</p>
 				</div>
 				<div className="icon">
 					<img alt="" src={graphql} />

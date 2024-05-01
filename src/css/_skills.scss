@@ -49,9 +49,9 @@
 
 }
 
-@for $i from 1 through 14 {
+@for $i from 1 through 19 {
     .icons.animate .icon:nth-child(#{$i}n) {
-        animation-delay: #{$i * 0.1}s;
+        animation-delay: #{$i * 0.050}s;
     }
 }
 
@@ -60,7 +60,7 @@
     .skills {
         
         .icons {
-            width: 65%;
+            width: 70%;
             .icon {
           
                 width: 20%;              

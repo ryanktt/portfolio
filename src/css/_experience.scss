@@ -1,0 +1,89 @@
+.experience {
+	background-color: rgb(255, 252, 244);
+	.experience-item {
+		margin: 50px 10%;
+
+		.experience-title {
+			margin: 0 auto;
+			width: fit-content;
+			margin-bottom: 35px;
+			text-align: center;
+		}
+		img {
+			width: 150px;
+			margin-bottom: 10px;
+		}
+		.experience-description {
+			margin-top: 15px;
+		}
+		.experience-name {
+			display: flex;
+			h3 {
+				color: $lightBlack;
+				margin-right: 10px;
+			}
+			h4 {
+				color: rgb(31, 31, 31);
+			}
+		}
+	}
+}
+
+.experience.animate {
+    img {
+        animation: toLeft 1s 1;
+        animation-fill-mode: forwards;
+    }
+    .experience-description {
+        animation: toRight 1s 1;
+        animation-fill-mode: forwards;
+    }
+    .experience-name {
+        animation: toLeft 1s 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+@media only screen and (min-width: 500px) {
+	.experience {
+		.experience-item {
+			margin: 50px 12%;
+		}
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+    .experience {
+		.experience-item {
+			margin: 50px 18%;
+		}
+	}
+}
+
+@keyframes landingh1 {
+    0% {     
+        
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    20%{
+        opacity: 0;
+    } 
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes landingDescription {
+    0% {     
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    20%{
+        opacity: 0;
+    } 
+    100% {
+        transform: translateX(0);
+    }
+}
