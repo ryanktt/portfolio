@@ -15,7 +15,7 @@ const Toolbar = () => {
 				</a>
 			</li>
 			<li>
-				<a href="#skills">
+				<a href="#experience">
 					<Translator path="experience.title" />
 				</a>
 			</li>
