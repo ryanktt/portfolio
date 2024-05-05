@@ -38,8 +38,26 @@ export default {
 			title: 'Experiência',
 			engaged: {
 				duration: { name: 'Duração', time: '3 anos' },
-				description:
-					'Nós criamos uma plataforma educacional feita sob medida para criar e supervisionar aulas online. Essa jornada começou do zero, desenvolvendo a nova API, o que me permitiu mergulhar fundo em conceitos complexos do começo ao fim. Desde então, nosso progresso tem sido significativo.\nHoje, a plataforma oferece uma variedade de recursos, nos quais contribuí como desenvolvedor de backend ao lado da minha equipe. Esses recursos incluem gerenciamento de cursos, salas, aulas e matrículas de alunos, armazenamento de conteúdo, funcionalidade de questionário e um construtor de certificados fácil de usar. O construtor de certificados até mesmo oferece a opção de gerar automaticamente com base no progresso do aluno.\nAlém disso, nossa plataforma facilita a importação de dados, sistemas de pagamento pontuais e recorrentes, links de pagamento, processos de checkout e integrações como o Facebook Pixel. Também implementamos políticas administrativas robustas para garantir um funcionamento tranquilo.\nEstou imensamente grato pela oportunidade de ter participado dessa experiência.',
+				description: `Na EngagED S.A., tive o privilégio de trabalhar em uma nova API do zero com minha equipe, onde assumi o desafio de desenvolver e manter uma API sem servidor para uma plataforma de educação white label. Durante minha permanência, desempenhei um papel fundamental na formação da funcionalidade central da plataforma, focando em várias características principais:
+
+					\u2022 Gestão de Curso e Turma: Desenvolvi as funcionalidades fundamentais para gestão de curso e turma, incluindo criação de curso, alocação de sala, estruturação de capítulos e gerenciamento de lições.
+				
+					\u2022 Questionário Customizável: Projetei e implementei um recurso de questionário personalizável, oferecendo uma variedade de opções para criação de testes e avaliação do progresso do usuário.
+				
+					\u2022 Integração de Armazenamento de Arquivos: Integrei funcionalidades de armazenamento de arquivos, permitindo que os usuários façam upload e gerenciem materiais relacionados ao curso com segurança.
+				
+					\u2022 Otimização do Sistema de Matrículas: Implementei um sistema de matrículas, aproveitando o AWS SQS para análises de dados simplificadas e melhor desempenho.
+				
+					\u2022 Construtor de Certificados: Desenvolvi uma ferramenta de construção de certificados que permite a criação de modelos personalizados e oferece várias opções de geração com base no progresso do curso do aluno ou entradas manuais.
+				
+					\u2022 Implementações de Pagamento: Desenvolvi a integração de soluções de pagamento, facilitando a geração de faturas com links de pagamento, funcionalidades de pagamento programadas e otimizações de checkout para conversões aprimoradas.
+				
+				Durante meu tempo na EngagED S.A., tive o privilégio de aprender com colegas experientes que generosamente compartilharam seu conhecimento e expertise. Sua orientação e mentoria foram inestimáveis para me ajudar a navegar em desafios técnicos complexos e desenvolver soluções eficazes.
+				
+				À medida que fiz a transição para o papel de único desenvolvedor de backend, as habilidades e insights transmitidos por meus mentores serviram como uma base sólida, capacitando-me a assumir novas responsabilidades com confiança. Mesmo nos momentos de autonomia, nunca me senti sozinho, sabendo que poderia contar com o apoio e a experiência de meus colegas sempre que necessário.
+				
+				Este ambiente colaborativo de aprendizado não apenas acelerou meu crescimento técnico, mas também fomentou um forte senso de trabalho em equipe e camaradagem. Juntos, enfrentamos projetos ambiciosos, celebramos sucessos compartilhados e aprendemos com as experiências uns dos outros, criando uma cultura de aprendizado e melhoria contínuos.
+				`,
 			},
 		},
 	},

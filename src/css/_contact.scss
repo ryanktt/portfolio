@@ -1,9 +1,10 @@
 .contact-wrapper {
     width: 100%;
-    background-color: $white;
+    background-color: $primaryDarkColor;
     h2 {
         width: fit-content;
         margin: 0 auto 20px auto;
+        color: $white;
     }
 }
 
@@ -20,7 +21,7 @@
         label {
             font-family: $titleFont;
             font-size: 18px;
-            color: $lightBlack;
+            color: $white;
             margin: 10px 0 5px 0;
             font-weight: 600;
            
@@ -29,12 +30,12 @@
         input, textarea {
             padding: 5px;
             font-size: 16px;
-            color: $lightBlack;
+            color: $white;
             width: 100%;
             background-color: $white;
             border: 1px solid rgb(212, 212, 212);
             border-radius: 3px;
-            border-bottom: 2px solid orange;
+            border-bottom: 2px solid $tertiaryMediumColor;
             outline-style: none;
             resize: none;
             
@@ -43,7 +44,7 @@
             height: 35px;
         }
         input:focus, textarea:focus {
-            border: 2px solid orange;
+            border: 2px solid $tertiaryMediumColor;
         }
 
         .btn {
@@ -72,5 +73,6 @@
 @media only screen and (min-width: 769px) {
     .contact {
         width: 45%;
+        max-width: 900px;
     }
 }

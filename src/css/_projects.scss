@@ -8,7 +8,6 @@
 }
 
 .projects {
-    width: $maxWidthPhone;
     margin: 0 auto;
     h2 {
         color: $white;
@@ -20,8 +19,9 @@
     }
 
     .project-list {
+        max-width: 100%;
         @include flex(row, center);
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: wrap;
 
     }
@@ -41,7 +41,6 @@
 
     .content {
         padding: 10px 15px;
-
         .title {
             color: $lightBlack;
             font-weight: bolder;
@@ -52,7 +51,9 @@
             font-size: 16px;
             color: $lightBlack;
         }
-
+        .content-text {
+            min-height: 260px;
+        }
         .tags {
             margin-bottom: 10px;
             div {
@@ -95,12 +96,10 @@
         width: $maxWidthTablet;
     }
 
-    .project {
-        max-width: 290px;
-    }
     .project-list {
         .project-box {
-           padding: 0 8px;
+           margin: 15px 15px;
+           align-self: flex-start;
         }
     }
 
@@ -115,11 +114,6 @@
     }
 }
 
-@media only screen and (min-width: 650px) {
-    .project {
-        max-width: 300px;
-    }
-}
 
 @media only screen and (min-width: 1500px) {
     .projects {

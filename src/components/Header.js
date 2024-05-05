@@ -29,7 +29,7 @@ const Header = () => {
 				</div>
 			</div>
 			<div className="header-btn">
-				<Button path={`https://ryanktt.github.io/portfolio/#experience`}>
+				<Button path={`https://ryanktt.github.io/portfolio/#projects`}>
 					<Translator path="header.seeMyWork" />
 				</Button>
 			</div>

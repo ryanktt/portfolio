@@ -13,8 +13,8 @@ function App() {
 			<Navbar />
 			<Header />
 			<Skills />
-			<Experience />
 			<Projects />
+			<Experience />
 			<Contact />
 			<Footer />
 		</div>
