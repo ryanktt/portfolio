@@ -54,11 +54,14 @@
 
 
 @media only screen and (min-width: 500px) {
-	.experience-item {
-		max-width: 90%;
-	}
 	.experience-wrapper {
 		max-width: $maxWidthTablet;
+		.experience-item {
+			max-width: 90%;
+			.experience-description {
+				font-size: 18px;
+			}
+		}
 	}
 }
 

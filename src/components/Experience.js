@@ -18,9 +18,9 @@ const Experience = () => {
 			<div className="experience-wrapper">
 				<div className="experience-item">
 					<div className="experience-title">
-						<h1>
+						<h2>
 							<Translator path="experience.title" />
-						</h1>
+						</h2>
 					</div>
 					<div>
 						<img src={engaged} alt="" />

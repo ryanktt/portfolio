@@ -32,7 +32,7 @@ const Project = (props) => {
 		<div className="project">
 			<img src={imgPath} alt="" />
 			<div className="content">
-				<p className="title">{title}</p>
+				<h3 className="title">{title}</h3>
 				<div className="tags">{tagList}</div>
 				<p className="content-text">{text}</p>
 			</div>

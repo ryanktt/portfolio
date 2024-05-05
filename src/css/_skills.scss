@@ -1,5 +1,4 @@
 .skills {
-    
     background-color: $white;
     @include flex(column, center);
 
@@ -16,7 +15,7 @@
     }
 
     .icons {
-        width: 88%;
+        width: 90%;
         margin: 0 auto;
         @include flex(row, center);
         flex-wrap: wrap;
@@ -56,9 +55,8 @@
 }
 
 
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 500px) {
     .skills {
-        
         .icons {
             width: 70%;
             .icon {

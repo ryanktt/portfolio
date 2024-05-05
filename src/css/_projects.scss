@@ -28,7 +28,8 @@
 }
 
 .project {
-    max-width: 380px;
+    border-radius: 5px;
+    max-width: 340px;
     background-color: $white;
     overflow: hidden;
     -webkit-box-shadow: -12px 18px 0px 0px rgba(0,0,0,0.5);
@@ -44,7 +45,7 @@
         .title {
             color: $lightBlack;
             font-weight: bolder;
-            font-size: 17px;
+            font-family: $titleFont;
             margin: 0px 0 15px 0;
         }
         p {
@@ -52,7 +53,7 @@
             color: $lightBlack;
         }
         .content-text {
-            min-height: 260px;
+            min-height: fit-content;
         }
         .tags {
             margin-bottom: 10px;
@@ -96,6 +97,17 @@
         width: $maxWidthTablet;
     }
 
+    .project {
+        max-width: 360px;
+        .content {
+            .content-text {
+                min-height: 195px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    
     .project-list {
         .project-box {
            margin: 15px 15px;
