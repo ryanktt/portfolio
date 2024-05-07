@@ -40,8 +40,8 @@ const Projects = () => {
 						<Project
 							text={<Translator path="projects.forumPlayersDescription" />}
 							title="FórumPlayers"
-							site="https://forumplayers.herokuapp.com/"
-							code="https://forum-client.onrender.com"
+							site="https://forum-client.onrender.com"
+							code="https://github.com/ryanktt/forum-website"
 							tags={[
 								'HTML',
 								'CSS',
