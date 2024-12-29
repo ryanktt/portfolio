@@ -20,14 +20,16 @@ export default {
 		},
 		projects: {
 			title: 'Projects',
-			forumPlayersDescription:
-				"A forum develop from scratch with the intent to improve my React and Back-End knowledge. \nIt has validation, user and post moderation system, private messages, everything you would expect from a forum and the fact that it's SPA, which accounts for less data usage and more accessibility.",
-			tickTechDescription:
-				'Full fledged blog made to reinforce my knowledge in NodeJs and MySQL. It has authentication and You can edit, create, delete and update posts.',
+			forumPlayersDescription: `A forum developed from scratch with the intent to improve my React and Backend knowledge. Beyond expected, it includes interesting features such as user and post moderation system, private messages, like, dislike, notifications, BB Code and it’s single page, which accounts for less data usage and more accessibility.`,
+			tickTechDescription: `A full-fledged blog made to reinforce my knowledge in NodeJs and MySQL. Fully manageable, to try it out as admin: 
+			\u2022 Access the route "/auth/sign-in";
+			\u2022 Create your account;
+			\u2022 Go to "postar" for making posts or "painel" for managing them;
+			\u2022 Logia via "/auth/login"`,
 			intoitDescription:
-				"The test that landed me my first job. Although incomplete, it was made in less than a week so I'd say it was a fine work.",
-			chatalkDescription:
-				'Simple real time chat using Socket.io.\n\nTo test it just open it in different tabs.',
+				'Made in less then a week. This was the project that landed me my first job, I poured my soul in it at the time, so it deserves its place here.',
+			chatalkDescription: `Real time chat using Socket.io. 
+				To try it, just open different tabs.`,
 			portfolioDescription:
 				'Portfolio planned with design in mind to showcase my skills and projects.',
 			portfolioTitle: 'Portfolio',

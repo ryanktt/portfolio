@@ -23,7 +23,6 @@
         @include flex(row, center);
         align-items: center;
         flex-wrap: wrap;
-
     }
 }
 
@@ -53,6 +52,7 @@
             color: $lightBlack;
         }
         .content-text {
+            white-space: pre-line;
             min-height: fit-content;
         }
         .tags {
@@ -98,7 +98,7 @@
     }
 
     .project {
-        max-width: 360px;
+        max-width: 380px;
         .content {
             .content-text {
                 min-height: 195px;
