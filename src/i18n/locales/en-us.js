@@ -1,4 +1,4 @@
-export default {
+const enUS = {
 	translations: {
 		contact: {
 			title: 'Contact Me',
@@ -27,7 +27,7 @@ export default {
 			\u2022 Go to "postar" for making posts or "painel" for managing them;
 			\u2022 Logia via "/auth/login"`,
 			intoitDescription:
-				'Made in less then a week. This was the project that landed me my first job, I poured my soul in it at the time, so it deserves its place here.',
+				'Made in less then a week. This was the project that landed me my first job, I poured my soul in it at the time to make it as good as possible in less than a week, so it deserves its place here.',
 			chatalkDescription: `Real time chat using Socket.io. 
 				To try it, just open different tabs.`,
 			portfolioDescription:
@@ -63,3 +63,5 @@ export default {
 		},
 	},
 };
+
+export default enUS;
