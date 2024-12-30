@@ -1,4 +1,4 @@
-const enUS = {
+const enUs = {
 	translations: {
 		contact: {
 			title: 'Contact Me',
@@ -39,6 +39,7 @@ const enUS = {
 		experience: {
 			title: 'Experience',
 			engaged: {
+				title: 'Head of Backend - EngagED/Campli',
 				duration: { name: 'Duration', start: '2021', finish: 'Present' },
 				description: `At EngagED S.A., I had the privilege of working on a new API from scratch with my team, where I undertook the challenge of developing and maintaining a serverless API for a white label education platform. During my tenure, I played a pivotal role in shaping the platform's core functionality, focusing on several key features:
 
@@ -64,4 +65,4 @@ const enUS = {
 	},
 };
 
-export default enUS;
+export default enUs;

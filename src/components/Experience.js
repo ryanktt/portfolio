@@ -25,7 +25,9 @@ const Experience = () => {
 					<div>
 						<img src={engaged} alt="" />
 						<div className="experience-name">
-							<h3>EngagED/Campli</h3>
+							<h3>
+								<Translator path="experience.engaged.title" />
+							</h3>
 							<h4>
 								<Translator path="experience.engaged.duration.start" /> -{' '}
 								<Translator path="experience.engaged.duration.finish" />
