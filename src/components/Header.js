@@ -15,7 +15,11 @@ const Header = () => {
 			</div>
 			<div className="contact-me">
 				<div>
-					<a href="https://github.com/ryanktt" target="_blank">
+					<a
+						href="https://github.com/ryanktt"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<i className="fab fa-github-square"></i>
 					</a>
 				</div>
@@ -23,8 +27,21 @@ const Header = () => {
 					<a
 						href="https://www.linkedin.com/in/ryan-kayro-6338ab209/"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<i className="fab fa-linkedin"></i>
+					</a>
+				</div>
+				<div>
+					<a
+						href="https://ryanktt.github.io/resume"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i
+							style={{ fontSize: '1.7rem', paddingTop: '1px' }}
+							className="fa-solid fa-file-lines"
+						></i>
 					</a>
 				</div>
 			</div>

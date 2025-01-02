@@ -20,6 +20,18 @@ const Footer = () => {
 							<i className="fab fa-linkedin"></i>
 						</a>
 					</div>
+					<div>
+						<a
+							href="https://ryanktt.github.io/resume"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<i
+								style={{ fontSize: '1.5rem', paddingTop: '1px' }}
+								className="fa-solid fa-file-lines"
+							></i>
+						</a>
+					</div>
 				</div>
 				<p>© 2021 https://ryanktt.github.io/portfolio</p>
 			</div>

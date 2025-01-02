@@ -1,23 +1,21 @@
-import style from './App.scss';
-import Header from './components/Header';
-import Navbar from './components/Navbar/Navbar';
-import Skills from './components/Skills';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Experience from './components/Experience';
+import {
+	BrowserRouter as Router,
+	Redirect,
+	Switch,
+	Route,
+} from 'react-router-dom';
+import Portfolio from './containers/Portfolio/Portfolio';
+import Resume from './containers/Resume/Resume';
 
 function App() {
 	return (
-		<div className={style.App}>
-			<Navbar />
-			<Header />
-			<Skills />
-			<Projects />
-			<Experience />
-			<Contact />
-			<Footer />
-		</div>
+		<Router>
+			<Switch>
+				<Route exact path="/portfolio" component={Portfolio} />
+				<Route exact path="/resume" component={Resume} />
+				<Redirect to="/portfolio" />
+			</Switch>
+		</Router>
 	);
 }
 
