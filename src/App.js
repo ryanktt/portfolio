@@ -11,9 +11,8 @@ function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route exact path="/" component={Portfolio} />
 				<Route exact path="/resume" component={Resume} />
-				<Redirect to="/" />
+				<Route exact path="/" component={Portfolio} />
 			</Switch>
 		</Router>
 	);

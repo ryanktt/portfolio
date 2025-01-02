@@ -1,33 +1,33 @@
 import React from 'react';
 import Translator from '../../I18n/Translator';
-
+import { HashLink as Link } from 'react-router-hash-link';
 const Toolbar = () => {
 	return (
 		<ul className="toolbar">
 			<li>
-				<a href="#">
+				<Link smooth to="#home">
 					<Translator path="header.title" />
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a href="#skills">
+				<Link smooth to="#skills">
 					<Translator path="skills.title" />
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a href="#experience">
+				<Link smooth to="#experience">
 					<Translator path="experience.title" />
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a href="#projects">
+				<Link smooth to="#projects">
 					<Translator path="projects.title" />
-				</a>
+				</Link>
 			</li>
 			<li>
-				<a href="#contact">
+				<Link smooth to="#contact">
 					<Translator path="contact.title" />
-				</a>
+				</Link>
 			</li>
 		</ul>
 	);

@@ -4,7 +4,7 @@ import React from 'react';
 
 const Header = () => {
 	return (
-		<header>
+		<header id="home">
 			<div className="presentation">
 				<h1>
 					<Translator path="header.hiImCalled" /> <span>Ryan Kayro</span>
