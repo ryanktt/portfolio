@@ -1,5 +1,6 @@
 import React from 'react';
 import Flags from './I18n/Flags';
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
 	return (
@@ -8,7 +9,11 @@ const Footer = () => {
 				<Flags />
 				<div className="contact-footer">
 					<div>
-						<a href="https://github.com/ryanktt" target="_blank">
+						<a
+							href="https://github.com/ryanktt"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<i className="fab fa-github-square"></i>
 						</a>
 					</div>
@@ -16,22 +21,17 @@ const Footer = () => {
 						<a
 							href="https://www.linkedin.com/in/ryan-kayro-6338ab209/"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<i className="fab fa-linkedin"></i>
 						</a>
 					</div>
-					<div>
-						<a
-							href="https://ryanktt.github.io/portfolio/#resume"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<i
-								style={{ fontSize: '1.5rem', paddingTop: '1px' }}
-								className="fa-solid fa-file-lines"
-							></i>
-						</a>
-					</div>
+					<HashLink target="_blank" rel="noopener noreferrer" to="/resume">
+						<i
+							style={{ fontSize: '1.5rem', paddingTop: '1px' }}
+							className="fa-solid fa-file-lines"
+						></i>
+					</HashLink>
 				</div>
 				<p>© 2021 https://ryanktt.github.io/portfolio</p>
 			</div>

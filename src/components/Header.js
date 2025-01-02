@@ -1,3 +1,4 @@
+import { HashLink } from 'react-router-hash-link';
 import Translator from './I18n/Translator';
 import Button from './UI/Button';
 import React from 'react';
@@ -33,20 +34,16 @@ const Header = () => {
 					</a>
 				</div>
 				<div>
-					<a
-						href="https://ryanktt.github.io/portfolio/#resume"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
+					<HashLink target="_blank" rel="noopener noreferrer" to="/resume">
 						<i
 							style={{ fontSize: '1.7rem', paddingTop: '1px' }}
 							className="fa-solid fa-file-lines"
 						></i>
-					</a>
+					</HashLink>
 				</div>
 			</div>
 			<div className="header-btn">
-				<Button path={`https://ryanktt.github.io/portfolio/#projects`}>
+				<Button path="#projects" isHashLink={true}>
 					<Translator path="header.seeMyWork" />
 				</Button>
 			</div>
