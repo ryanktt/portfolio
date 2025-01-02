@@ -34,7 +34,7 @@ const Header = () => {
 				</div>
 				<div>
 					<a
-						href="https://ryanktt.github.io/resume"
+						href="https://ryanktt.github.io/portfolio/#resume"
 						target="_blank"
 						rel="noopener noreferrer"
 					>

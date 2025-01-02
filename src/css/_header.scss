@@ -1,6 +1,7 @@
 header {
     background-color: $headerColor;
     height: 100vh;
+    min-height: 900px;
     @include flex(column, center);
     transition: ease-in-out 0.2;
     
