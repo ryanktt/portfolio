@@ -1,5 +1,5 @@
 import {
-	BrowserRouter as Router,
+	HashRouter as Router,
 	Redirect,
 	Switch,
 	Route,
@@ -11,9 +11,9 @@ function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route exact path="/portfolio" component={Portfolio} />
+				<Route exact path="/" component={Portfolio} />
 				<Route exact path="/resume" component={Resume} />
-				<Redirect to="/portfolio" />
+				<Redirect to="/" />
 			</Switch>
 		</Router>
 	);
