@@ -37,7 +37,7 @@ const ptBr = {
 		experience: {
 			title: 'Experiência',
 			engaged: {
-				title: 'Líder de Backend - EngagED/Campli',
+				title: 'Líder de Backend - EngagED S.A',
 				duration: { name: 'Duração', time: '3 anos' },
 				description: `Na EngagED S.A., tive o privilégio de trabalhar em uma nova API do zero com minha equipe, onde assumi o desafio de desenvolver e manter uma API sem servidor para uma plataforma de educação white label. Durante minha permanência, desempenhei um papel fundamental na formação da funcionalidade central da plataforma, focando em várias características principais:
 
