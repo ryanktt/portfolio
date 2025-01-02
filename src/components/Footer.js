@@ -28,7 +28,7 @@ const Footer = () => {
 					</div>
 					<HashLink target="_blank" rel="noopener noreferrer" to="/resume">
 						<i
-							style={{ fontSize: '1.5rem', paddingTop: '1px' }}
+							style={{ fontSize: '1.45rem' }}
 							className="fa-solid fa-file-lines"
 						></i>
 					</HashLink>
