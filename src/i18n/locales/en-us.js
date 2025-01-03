@@ -22,10 +22,10 @@ const enUs = {
 			title: 'Projects',
 			forumPlayersDescription: `A forum developed from scratch with the intent to improve my React and Backend knowledge. Beyond expected, it includes interesting features such as user and post moderation system, private messages, like, dislike, notifications, BB Code and it’s single page, which accounts for less data usage and more accessibility.`,
 			tickTechDescription: `A full-fledged blog made to reinforce my knowledge in NodeJs and MySQL. Fully manageable, to try it out as admin: 
-			\u2022 Access the route "/auth/sign-in";
+			\u2022 Access route "/auth/sign-up";
 			\u2022 Create your account;
 			\u2022 Go to "postar" for making posts or "painel" for managing them;
-			\u2022 Login via "/auth/login"`,
+			\u2022 You can login via "/auth/login"`,
 			intoitDescription:
 				'This was the project that landed me my first job, I had one week to deliver, so I poured my soul in it at the time to make it as great as possible in that timeframe.',
 			chatalkDescription: `Real time chat using Socket.io. 
