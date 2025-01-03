@@ -25,6 +25,7 @@
 		}
 		.experience-name {
 			display: flex;
+			flex-wrap: wrap;
 			h3 {
 				color: $lightBlack;
 				margin-right: 10px;
