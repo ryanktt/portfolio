@@ -16,7 +16,7 @@ const ptBr = {
 		},
 		skills: {
 			skills: 'Habilidades',
-			tecsUsed: 'Técnologias que Trabalhei com:',
+			tecsUsed: 'Técnologias que Trabalhei com',
 		},
 		projects: {
 			title: 'Projetos',

@@ -16,7 +16,7 @@ const enUs = {
 		},
 		skills: {
 			title: 'Skills',
-			tecsUsed: "Technologies I've used",
+			tecsUsed: "Technologies I'm familiar with",
 		},
 		projects: {
 			title: 'Projects',

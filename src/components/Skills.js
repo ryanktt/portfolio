@@ -70,6 +70,10 @@ const Skills = () => {
 					<p>ExpressJs</p>
 				</div>
 				<div className="icon">
+					<img alt="" src={nestjs} />
+					<p>NestJs</p>
+				</div>
+				<div className="icon">
 					<img alt="" src={aws} />
 					<p>AWS</p>
 				</div>
@@ -116,10 +120,6 @@ const Skills = () => {
 				<div className="icon">
 					<img alt="" src={github} />
 					<p>GitHub</p>
-				</div>
-				<div className="icon">
-					<img alt="" src={nestjs} />
-					<p>NestJs</p>
 				</div>
 			</div>
 		</section>
