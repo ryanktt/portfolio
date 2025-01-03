@@ -25,7 +25,7 @@ const enUs = {
 			\u2022 Access the route "/auth/sign-in";
 			\u2022 Create your account;
 			\u2022 Go to "postar" for making posts or "painel" for managing them;
-			\u2022 Logia via "/auth/login"`,
+			\u2022 Login via "/auth/login"`,
 			intoitDescription:
 				'This was the project that landed me my first job, I had one week to deliver, so I poured my soul in it at the time to make it as great as possible in that timeframe.',
 			chatalkDescription: `Real time chat using Socket.io. 
