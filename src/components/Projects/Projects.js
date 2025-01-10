@@ -2,14 +2,12 @@ import React, { useEffect } from 'react';
 import Project from './Items/Project';
 import forum from '../../assets/projects/forum.jpg';
 import blog from '../../assets/projects/blog.jpg';
-// import portfolio from '../../assets/projects/portfolio.jpg';
 import chat from '../../assets/projects/chat.jpg';
 import intoit from '../../assets/projects/intoit.jpg';
 import Translator from '../I18n/Translator';
 
 const Projects = () => {
 	useEffect(() => {
-		//project animation
 		const projects = document.querySelectorAll('.project-box');
 		projects.forEach((project) => {
 			const observer = new IntersectionObserver(
@@ -80,7 +78,6 @@ const Projects = () => {
 						<Project
 							text={<Translator path="projects.chatalkDescription" />}
 							title="Chatalk"
-							// site="https://lchatalkl.herokuapp.com/"
 							code="https://github.com/ryanktt/chat-app/"
 							tags={[
 								'HTML',
@@ -98,7 +95,6 @@ const Projects = () => {
 						<Project
 							text={<Translator path="projects.intoitDescription" />}
 							title="IntoIT"
-							// site="https://intoit.herokuapp.com/"
 							code="https://github.com/ryanktt/course-app/"
 							tags={[
 								'HTML',
@@ -114,15 +110,6 @@ const Projects = () => {
 							imgPath={intoit}
 						/>
 					</div>
-					{/* <div className='project-box '>
-                        <Project
-                        text={<Translator path='projects.portfolioDescription'/>}
-                        title={<Translator path='projects.portfolioTitle'/>}
-                        site='https://ryanktt.github.io/portfolio/'
-                        code='https://github.com/ryanktt/portfolio'
-                        tags={['HTML', 'CSS', 'JavaScript', 'React', 'NPM', 'Sass']}
-                        imgPath={portfolio}/>
-                    </div>  */}
 				</div>
 			</div>
 		</section>
