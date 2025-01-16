@@ -8,7 +8,6 @@ const Button = (props) => {
 	if (small) classes = `${classes} small`;
 	if (dark) classes = `${classes} dark`;
 	if (!type) type = 'button';
-	console.log(isHashLink);
 
 	let target = '_blank';
 	if (path)
