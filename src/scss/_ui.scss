@@ -1,0 +1,28 @@
+.alert {
+	position: fixed;
+	bottom: 20%;
+	z-index: 20;
+	left: 50%;
+	opacity: 1;
+	transition: ease-in-out 0.2s;
+	transform: translate(-50%, 0);
+	visibility: visible;
+	button {
+		opacity: 0;
+		transition: ease-in-out 0.1s;
+	}
+}
+
+.alert-hidden {
+	opacity: 0;
+	transform: translate(-50%, 50%);
+	visibility: hidden;
+	button {
+		opacity: 0;
+	}
+}
+.alert:hover {
+	button {
+		opacity: 1;
+	}
+}

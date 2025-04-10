@@ -1,0 +1,26 @@
+.footer {
+	background-color: $dark8;
+	.container {
+		padding: $spacingXs $spacingLg;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	p {
+		color: $gray1;
+		font-weight: 500;
+	}
+
+	.icon-link {
+		i {
+			font-size: 22px;
+			color: $gray1;
+		}
+		&:hover {
+			i {
+				color: $secondaryColor7;
+			}
+		}
+	}
+}

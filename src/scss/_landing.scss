@@ -1,0 +1,41 @@
+.landing {
+	background-color: $white;
+	min-height: rem(600px);
+	width: 100vw;
+	height: 100vh;
+}
+
+.landing-container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: $spacingMd;
+	.title {
+		font-size: rem(30px);
+	}
+	.title.name {
+		font-size: rem(35px);
+		color: $secondaryColor6;
+	}
+	.title.one {
+		animation: toRight 0.8s 1;
+	}
+	.title.two {
+		animation: toLeft 0.8s 1;
+	}
+	.description {
+		font-size: rem(20px);
+	}
+	.icon-link {
+		animation: fadeIn 1s 1;
+	}
+	.button {
+		animation: toTop 0.8s 1;
+		background: linear-gradient(30deg, $primaryColor5, $secondPrimaryColor5);
+		border-width: 0px;
+		&:hover {
+			background: linear-gradient(30deg, $primaryColor6, $secondPrimaryColor6);
+		}
+	}
+}

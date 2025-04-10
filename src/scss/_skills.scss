@@ -1,0 +1,33 @@
+.skills {
+	background: $white;
+	.title {
+		font-size: rem(20px);
+	}
+	.icons {
+		.icon {
+			opacity: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			width: rem(100px);
+			height: rem(90px);
+			img {
+				width: rem(55px);
+				max-height: rem(55px);
+				text-align: center;
+			}
+		}
+	}
+	.icons.animate .icon {
+		animation: toTop 0.4s 1;
+		animation-fill-mode: forwards;
+		transition: ease-out;
+	}
+}
+
+@for $i from 1 through 19 {
+	.icons.animate .icon:nth-child(#{$i}n) {
+		animation-delay: #{$i * 0.05}s;
+	}
+}

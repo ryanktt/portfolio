@@ -1,0 +1,23 @@
+.contact {
+	background: $gray2;
+
+	label {
+		font-weight: 600;
+	}
+
+	.container {
+		opacity: 0;
+	}
+
+	.button {
+		background: linear-gradient(30deg, $primaryColor5, $secondPrimaryColor5);
+		border-width: 0px;
+		&:hover {
+			background: linear-gradient(30deg, $primaryColor6, $secondPrimaryColor6);
+		}
+	}
+}
+.contact.animate .container {
+	animation: toTop 0.8s 1;
+	animation-fill-mode: forwards;
+}

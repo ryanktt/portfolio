@@ -1,0 +1,68 @@
+.projects {
+	background: linear-gradient(30deg, $blue5, $cyan5);
+}
+
+.project {
+	li {
+		color: $dark4;
+	}
+	display: flex;
+	background-color: $white;
+	width: 100%;
+	img {
+		width: 50%;
+		height: auto;
+	}
+
+	i {
+		margin-right: rem(5px);
+	}
+
+	ul {
+		margin-bottom: 0;
+	}
+
+	.feat-tag-box {
+		display: flex;
+		gap: $spacingMd;
+	}
+	.features {
+		flex: 1 1 60%;
+	}
+	.tags {
+		.tag {
+			margin-right: rem(8px);
+		}
+		flex: 1 1 40%;
+	}
+}
+
+.project-card {
+	opacity: 0;
+}
+
+.projects .project-card.animate {
+	animation: toTop 0.7s 1;
+	animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: $mantine-breakpoint-sm) {
+	.project {
+		.feat-tag-box {
+			flex-wrap: wrap;
+		}
+
+		.tags,
+		.features {
+			flex-basis: 100%;
+		}
+	}
+	.projects .project-card.animate:nth-of-type(even) {
+		animation: toRight 0.7s 1;
+		animation-fill-mode: forwards;
+	}
+	.projects .project-card.animate:nth-of-type(odd) {
+		animation: toLeft 0.7s 1;
+		animation-fill-mode: forwards;
+	}
+}

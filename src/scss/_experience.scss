@@ -1,0 +1,25 @@
+.experience {
+	background: linear-gradient(30deg, $cyan6, $teal6);
+}
+
+.xp-item {
+	border-radius: $radiusMd;
+	background: linear-gradient(30deg, $teal0, $white);
+	padding: $spacingLg;
+	box-shadow: $shadowMd;
+
+	li {
+		color: $dark6;
+	}
+	opacity: 0;
+}
+
+.experience .xp-item.animate:nth-of-type(even) {
+	animation: toLeft 0.7s 1;
+	animation-fill-mode: forwards;
+}
+
+.experience .xp-item.animate:nth-of-type(even) {
+	animation: toRight 0.7s 1;
+	animation-fill-mode: forwards;
+}

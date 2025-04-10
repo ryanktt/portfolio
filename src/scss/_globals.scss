@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: inherit;
+	font-weight: 500;
+}
+img {
+	border-radius: $radiusSm;
+}
+
+button {
+	border: none;
+	&:hover &:focus {
+		border: none;
+	}
+}
+.icon-link {
+	i {
+		color: $black;
+	}
+	&:hover {
+		i {
+			color: $secondaryColor7;
+		}
+	}
+}
+.section {
+	padding: rem(150px) 0;
+}
+
+@media only screen and (max-width: $mantine-breakpoint-md) {
+	html {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: $mantine-breakpoint-sm) {
+	html {
+		font-size: 14px;
+	}
+}

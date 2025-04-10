@@ -1,0 +1,52 @@
+.about {
+	opacity: 0;
+}
+
+.about.animate {
+	opacity: 1;
+	.image {
+		animation: toRight 0.7s 1;
+		animation-fill-mode: forwards;
+	}
+	.title {
+		animation: toBottom 0.7s 1;
+		animation-fill-mode: forwards;
+	}
+	.text {
+		animation: toLeft 0.7s 1;
+		animation-fill-mode: forwards;
+	}
+	.text2 {
+		animation: toRight 0.7s 1;
+		animation-fill-mode: forwards;
+	}
+	.carousel {
+		animation: toTop 0.8s 1;
+		animation-fill-mode: forwards;
+	}
+}
+
+@media only screen and (max-width: $mantine-breakpoint-sm) {
+	.about.animate {
+		.image {
+			animation: toBottom 0.8s 1;
+			animation-fill-mode: forwards;
+		}
+		.title {
+			animation: toRight 0.7s 1;
+			animation-fill-mode: forwards;
+		}
+		.text {
+			animation: toLeft 0.7s 1;
+			animation-fill-mode: forwards;
+		}
+		.text2 {
+			animation: toRight 1s 1;
+			animation-fill-mode: forwards;
+		}
+		.carousel {
+			animation: toTop 1s 1;
+			animation-fill-mode: forwards;
+		}
+	}
+}
