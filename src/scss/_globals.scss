@@ -3,10 +3,12 @@
 html {
 	scroll-behavior: smooth;
 }
+
 a {
 	text-decoration: inherit;
 	font-weight: 500;
 }
+
 img {
 	border-radius: $radiusMd;
 }
@@ -17,6 +19,7 @@ button {
 		border: none;
 	}
 }
+
 .icon-link {
 	i {
 		color: $black;
@@ -27,7 +30,10 @@ button {
 		}
 	}
 }
+
 .section {
+	width: 100vw;
+	overflow: hidden;
 	padding: rem(150px) 0;
 }
 
