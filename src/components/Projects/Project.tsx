@@ -1,6 +1,6 @@
 import { Badge, Button, Flex, rem, Text, Title, useMantineTheme } from '@mantine/core';
 import { MouseEventHandler } from 'react';
-import ImgCarousel from '../UI/ImgCarousel';
+import ImgGallery from '../UI/ImgGallery';
 
 export interface IProject {
 	tags: string[];
@@ -91,8 +91,8 @@ const Project = (props: IProject) => {
 					</div>
 				</Flex>
 
-				<div style={{ margin: `${rem(10)} 0` }}>
-					{imgSrcs?.length ? <ImgCarousel imgSrcs={imgSrcs} controlColor={color} /> : null}
+				<div style={{ maxWidth: rem(420), margin: '0 auto' }}>
+					{imgSrcs?.length ? <ImgGallery imgSrcs={imgSrcs} /> : null}
 				</div>
 
 				<Flex gap={'xs'}>

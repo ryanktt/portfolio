@@ -9,7 +9,7 @@ import me from '../../assets/photos/me.jpg';
 import mountain from '../../assets/photos/mountain.jpg';
 import tree from '../../assets/photos/tree.jpg';
 import { HandleAnimationInView } from '../hooks/handle-animation-in-view';
-import ImgCarousel from './UI/ImgCarousel';
+import ImgGallery from './UI/ImgGallery';
 import SectionTitle from './UI/SectionTitle';
 
 export default function About() {
@@ -54,9 +54,7 @@ export default function About() {
 		</Flex>
 	);
 
-	const carousel = (
-		<ImgCarousel imgSrcs={[mountain, lookup, lookahead, eye, joana, lake, tree]} controlColor="blue" />
-	);
+	const carousel = <ImgGallery imgSrcs={[mountain, lookup, lookahead, eye, joana, lake, tree]} />;
 
 	return (
 		<Box id="about" w={'100vw'} className="about section">

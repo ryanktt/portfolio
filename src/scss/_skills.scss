@@ -24,6 +24,10 @@
 		animation-fill-mode: forwards;
 		transition: ease-out;
 	}
+
+	img {
+		border-radius: $radiusSm;
+	}
 }
 
 @for $i from 1 through 19 {
