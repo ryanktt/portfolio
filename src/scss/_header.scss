@@ -3,8 +3,12 @@
 	width: 100vw;
 	z-index: 100;
 	top: 0;
-	transition: ease-in-out 0.2s;
+	transition: ease-in-out 0.4s;
 	background: $white;
+
+	.container {
+		height: rem(57px);
+	}
 	p {
 		color: $black;
 		margin: 0;
@@ -38,10 +42,11 @@
 	position: absolute;
 	background-color: $white;
 	width: 100%;
-	transition: ease-in-out 0.4s;
+	transition: ease-in-out 0.3s;
 	transform: translateY(-600px);
 	left: 0;
 }
+
 .header-accordion.active {
 	transform: translateY(0);
 }

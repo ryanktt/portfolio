@@ -1,5 +1,5 @@
-import { Box, Container, Flex, Title } from '@mantine/core';
-import { useState } from 'react';
+import { Box, Container, Flex, rem, Title } from '@mantine/core';
+import { useEffect, useState } from 'react';
 import ModeSwitcher from './UI/ModeSwitcher';
 
 const linkProps = [
@@ -20,7 +20,7 @@ function Hamburger({ onClick }: { onClick: () => void }) {
 	return (
 		<Flex gap={'xl'} hiddenFrom="sm" align={'center'}>
 			<ModeSwitcher />
-			<Flex onClick={onClick} align={'center'} className="header-burger" >
+			<Flex onClick={onClick} align={'center'} className="header-burger">
 				<i className="fa fa-bars" aria-hidden="true"></i>
 			</Flex>
 		</Flex>
@@ -57,18 +57,48 @@ export default function Header() {
 	const toggleAccordion = () => {
 		setAccordionActive(!accordionActive);
 	};
+
+	/* When the user scrolls down, hide the header. When the user scrolls up, show the header */
+	useEffect(() => {
+		let prevScrollPos = window.scrollY;
+
+		const header = document.querySelector('.header') as HTMLElement;
+		const accordion = document.querySelector('.header-accordion') as HTMLElement;
+
+		if (!header) return;
+		console.log(rem(-57))
+		const handleScroll = () => {
+			const currentScrollPos = window.scrollY;
+
+			if (prevScrollPos >= currentScrollPos) {
+				header.style.top = '0';
+			} else {
+				header.style.top = rem(-57);
+				accordion?.classList.remove('active');
+			}
+
+			prevScrollPos = currentScrollPos;
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
 	return (
 		<Box className="header">
-			<Container p={'md'}>
-				<Flex gap={'md'} align={'center'} justify={'space-between'}>
-					<Title style={{ zIndex: 20 }} size={'lg'} className="title">
-						RyanKTT
-					</Title>
-					<ToolbarLinks />
+			<Container className="container">
+					<Flex gap={'md'} w={'100%'} h={'100%'} align={'center'} justify={'space-between'}>
+						<Title style={{ zIndex: 20 }} size={'lg'} className="title">
+							RyanKTT
+						</Title>
+						<ToolbarLinks />
 
-					<Hamburger onClick={toggleAccordion} />
-				</Flex>
-				<AccordionLinks active={accordionActive} />
+						<Hamburger onClick={toggleAccordion} />
+					</Flex>
+					<AccordionLinks active={accordionActive} />
 			</Container>
 		</Box>
 	);
