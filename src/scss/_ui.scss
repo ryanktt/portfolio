@@ -41,3 +41,22 @@
 		object-fit: contain;
 	}
 }
+
+.mode-switcher {
+	cursor: pointer;
+	z-index: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: $radiusMd;
+	border: 1px solid $gray6;
+	transition: ease 0.2s;
+	height: rem(35px);
+	width: rem(40px);
+	i {
+		font-size: rem(20px);
+	}
+	&:hover {
+		background-color: $gray0;
+	}
+}

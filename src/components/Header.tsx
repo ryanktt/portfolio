@@ -1,5 +1,6 @@
-import { Box, Burger, Container, Flex, Title } from '@mantine/core';
+import { Box, Container, Flex, Title } from '@mantine/core';
 import { useState } from 'react';
+import ModeSwitcher from './UI/ModeSwitcher';
 
 const linkProps = [
 	{ path: '#home', label: 'Home' },
@@ -9,20 +10,28 @@ const linkProps = [
 	{ path: '#about', label: 'About' },
 	{ path: '#contact', label: 'Contact' },
 ];
-const headerLinks = linkProps.map(({ label, path }) => <a key={label} href={path}>{label}</a>);
+const headerLinks = linkProps.map(({ label, path }) => (
+	<a key={label} href={path}>
+		{label}
+	</a>
+));
 
-function Hamburger({ onClick}: {onClick: () => void}) {
+function Hamburger({ onClick }: { onClick: () => void }) {
 	return (
-		<Flex onClick={onClick} align={'center'} className="header-burger" hiddenFrom='sm'>
-			<Burger />
+		<Flex gap={'xl'} hiddenFrom="sm" align={'center'}>
+			<ModeSwitcher />
+			<Flex onClick={onClick} align={'center'} className="header-burger" >
+				<i className="fa fa-bars" aria-hidden="true"></i>
+			</Flex>
 		</Flex>
 	);
 }
 
 function ToolbarLinks() {
 	return (
-		<Flex gap={'md'} visibleFrom="sm">
+		<Flex gap={'md'} visibleFrom="sm" align={'center'}>
 			{headerLinks}
+			<ModeSwitcher />
 		</Flex>
 	);
 }
@@ -35,7 +44,7 @@ function AccordionLinks({ active }: { active: boolean }) {
 			direction={'column'}
 			p={'lg'}
 			align={'center'}
-			hiddenFrom='sm'
+			hiddenFrom="sm"
 		>
 			{headerLinks}
 		</Flex>
@@ -52,11 +61,14 @@ export default function Header() {
 		<Box className="header">
 			<Container p={'md'}>
 				<Flex gap={'md'} align={'center'} justify={'space-between'}>
-					<Title style={{zIndex: 20}} size={'lg'} className='title'>RyanKTT</Title>
+					<Title style={{ zIndex: 20 }} size={'lg'} className="title">
+						RyanKTT
+					</Title>
 					<ToolbarLinks />
-					<Hamburger onClick={toggleAccordion}/>
+
+					<Hamburger onClick={toggleAccordion} />
 				</Flex>
-			<AccordionLinks active={accordionActive}/>
+				<AccordionLinks active={accordionActive} />
 			</Container>
 		</Box>
 	);
