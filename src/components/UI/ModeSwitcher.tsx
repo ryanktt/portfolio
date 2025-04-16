@@ -23,9 +23,9 @@ export default function ModeSwitcher() {
 	return (
 		<div className="mode-switcher" onClick={() => setDarkMode(!darkMode)}>
 			{darkMode ? (
-				<i className="fa fa-moon-o" aria-hidden="true"></i>
-			) : (
 				<i className="fa fa-sun-o" aria-hidden="true"></i>
+			) : (
+				<i className="fa fa-moon-o" aria-hidden="true"></i>
 			)}
 		</div>
 	);
