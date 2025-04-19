@@ -2,6 +2,7 @@ import { Box, Container, Group, Text } from '@mantine/core';
 
 import aws from '../../assets/icons/aws.png';
 import css from '../../assets/icons/css.svg';
+import docker from '../../assets/icons/docker.svg';
 import expressjs from '../../assets/icons/expressjs.svg';
 import git from '../../assets/icons/git.svg';
 import github from '../../assets/icons/github.svg';
@@ -17,6 +18,7 @@ import react from '../../assets/icons/react.svg';
 import redux from '../../assets/icons/redux.svg';
 import restapi from '../../assets/icons/restapi.png';
 import sass from '../../assets/icons/sass.svg';
+import serverless from '../../assets/icons/serverless.svg';
 import typescript from '../../assets/icons/typescript.svg';
 import yarn from '../../assets/icons/yarn.svg';
 import { HandleAnimationInView } from '../hooks/handle-animation-in-view';
@@ -33,6 +35,8 @@ const skillsProps = [
 	{ imgSrc: aws, label: 'AWS' },
 	{ imgSrc: graphql, label: 'GraphQL' },
 	{ imgSrc: restapi, label: 'Api REST' },
+	{ imgSrc: docker, label: 'Docker' },
+	{ imgSrc: serverless, label: 'Serverless' },
 	{ imgSrc: npm, label: 'NPM' },
 	{ imgSrc: yarn, label: 'Yarn' },
 	{ imgSrc: sass, label: 'Sass' },
