@@ -30,7 +30,7 @@
 	}
 }
 
-@for $i from 1 through 19 {
+@for $i from 1 through 21 {
 	.icons.animate .icon:nth-child(#{$i}n) {
 		animation-delay: #{$i * 0.05}s;
 	}
