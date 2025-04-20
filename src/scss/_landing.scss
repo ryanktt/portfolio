@@ -39,3 +39,25 @@
 		}
 	}
 }
+.resume {
+	border-radius: $radiusSm;
+	overflow: hidden;
+	.resume-link {
+		padding: 0 $spacingXs;
+		align-items: center;
+		display: flex;
+		background: $black;
+		color: $white;
+		height: rem(33px);
+		width: 100%;
+		font-size: rem(12px);
+		font-weight: 800;
+	}
+	color: $white;
+	&:hover {
+		.resume-link {
+			background: transparent;
+		}
+		background: $secondaryColor7 !important;
+	}
+}

@@ -10,11 +10,13 @@ export default function SectionTitle({
 	color?: string;
 }) {
 	return (
-		<Center style={{flexDirection: 'column'}} mb={50}>
+		<Center style={{ flexDirection: 'column' }} mb={50}>
 			<Title size={28} c={color}>
 				{title}
 			</Title>
-			<Text size='lg' c={color}>{description}</Text>
+			<Text size="lg" c={color}>
+				{description}
+			</Text>
 		</Center>
 	);
 }

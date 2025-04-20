@@ -3,6 +3,7 @@
 import { createTheme, ListItem, MantineProvider, rem, Text } from '@mantine/core';
 import '@mantine/core/styles.css';
 import { ModalsProvider } from '@mantine/modals';
+import { useState } from 'react';
 import 'react-photo-view/dist/react-photo-view.css';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -12,6 +13,7 @@ import Header from './components/Header';
 import Landing from './components/Landing';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills';
+import { Context } from './Context';
 import './scss/_index.scss';
 
 export default function App() {
@@ -35,18 +37,23 @@ export default function App() {
 			}),
 		},
 	});
+
+	const [darkMode, setDarkMode] = useState<boolean | null>(null)
+
 	return (
-		<MantineProvider defaultColorScheme="light" forceColorScheme="light" theme={theme}>
-			<ModalsProvider>
-				<Header />
-				<Landing />
-				<Projects />
-				<Skills />
-				<Experience />
-				<About />
-				<Contact />
-				<Footer />
-			</ModalsProvider>
-		</MantineProvider>
+		<Context.Provider value={{ darkMode, setDarkMode }}>
+			<MantineProvider defaultColorScheme="light" forceColorScheme="light" theme={theme}>
+				<ModalsProvider>
+					<Header />
+					<Landing />
+					<Projects />
+					<Skills />
+					<Experience />
+					<About />
+					<Contact />
+					<Footer />
+				</ModalsProvider>
+			</MantineProvider>
+		</Context.Provider>
 	);
 }

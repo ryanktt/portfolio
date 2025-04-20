@@ -1,14 +1,26 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { disable as disableDarkMode, enable as enableDarkMode } from 'darkreader';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
+import { Context } from '../../Context';
 
 export default function ModeSwitcher() {
-	const [darkMode, setDarkMode] = useState<boolean>(false);
+	const { darkMode, setDarkMode } = useContext(Context);
+
 	useEffect(() => {
 		if (darkMode) {
-			enableDarkMode({
-				brightness: 100,
-				contrast: 100,
-			});
+			enableDarkMode(
+				{
+					brightness: 100,
+					contrast: 100,
+				},
+				{
+					css: '',
+					disableStyleSheetsProxy: false,
+					invert: ['.resume-link'],
+					ignoreInlineStyle: [],
+					ignoreImageAnalysis: ['.resume'],
+				},
+			);
 		} else {
 			disableDarkMode();
 		}
