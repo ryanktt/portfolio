@@ -27,7 +27,8 @@
 	.description {
 		font-size: rem(20px);
 	}
-	.icon-link {
+	.icon-link,
+	.resume {
 		animation: fadeIn 1s 1;
 	}
 	.button {
@@ -38,26 +39,26 @@
 			background: linear-gradient(30deg, $primaryColor6, $secondPrimaryColor6);
 		}
 	}
-}
-.resume {
-	border-radius: $radiusSm;
-	overflow: hidden;
-	.resume-link {
-		padding: 0 $spacingXs;
-		align-items: center;
-		display: flex;
-		background: $black;
-		color: $white;
-		height: rem(33px);
-		width: 100%;
-		font-size: rem(12px);
-		font-weight: 800;
-	}
-	color: $white;
-	&:hover {
+	.resume {
+		border-radius: $radiusSm;
+		overflow: hidden;
 		.resume-link {
-			background: transparent;
+			padding: 0 $spacingXs;
+			align-items: center;
+			display: flex;
+			background: $black;
+			color: $white;
+			height: rem(33px);
+			width: 100%;
+			font-size: rem(12px);
+			font-weight: 800;
 		}
-		background: $secondaryColor7 !important;
+		color: $white;
+		&:hover {
+			.resume-link {
+				background: transparent;
+			}
+			background: $secondaryColor7 !important;
+		}
 	}
 }
