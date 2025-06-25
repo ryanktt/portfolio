@@ -8,7 +8,9 @@ import git from '../../assets/icons/git.svg';
 import github from '../../assets/icons/github.svg';
 import graphql from '../../assets/icons/graphql.svg';
 import html from '../../assets/icons/html.svg';
+import java from '../../assets/icons/java.svg';
 import javascript from '../../assets/icons/javascript.svg';
+import maven from '../../assets/icons/maven.svg';
 import mongodb from '../../assets/icons/mongodb.svg';
 import mysql from '../../assets/icons/mysql.svg';
 import nestjs from '../../assets/icons/nestjs.svg';
@@ -19,8 +21,11 @@ import redux from '../../assets/icons/redux.svg';
 import restapi from '../../assets/icons/restapi.png';
 import sass from '../../assets/icons/sass.svg';
 import serverless from '../../assets/icons/serverless.svg';
+import springBoot from '../../assets/icons/spring-boot.svg';
 import typescript from '../../assets/icons/typescript.svg';
 import yarn from '../../assets/icons/yarn.svg';
+
+
 import { HandleAnimationInView } from '../hooks/handle-animation-in-view';
 import SectionTitle from './UI/SectionTitle';
 
@@ -46,6 +51,10 @@ const skillsProps = [
 	{ imgSrc: mongodb, label: 'MongoDB' },
 	{ imgSrc: git, label: 'Git' },
 	{ imgSrc: github, label: 'GitHub' },
+	{ imgSrc: java, label: 'Java' },
+	{ imgSrc: maven, label: 'Maven' },
+	{ imgSrc: springBoot, label: 'Spring Boot' },
+
 ];
 
 export default function Skills() {
